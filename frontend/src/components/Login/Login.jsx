@@ -61,14 +61,14 @@ export const Login = () => {
         console.log(res.data);
       })
       .catch((err) => {
+        console.log(err);
         toast({
           position: "top",
-          title: `${err.response.data.message}`,
+          title: `${err.response.data.error || err.response.data.message}`,
           status: "error",
           duration: 4000,
           isClosable: true,
         });
-        console.log(err);
         dispatch({ type: LOGIN_FAILURE });
       });
 
@@ -120,7 +120,7 @@ export const Login = () => {
           </FormControl>
         </VStack>
         <Center>
-          <Button bg="#673ab7" color="white" onClick={handleLogin}>
+          <Button bg="#673ab7" _hover={{bg:"#672eca"}} color="white" onClick={handleLogin}>
             Login
           </Button>
         </Center>

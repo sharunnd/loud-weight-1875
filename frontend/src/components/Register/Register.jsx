@@ -117,7 +117,7 @@ export const Register = () => {
             />
           </FormControl>
         </SimpleGrid>
-        <Button mt={10} bg="#673ab7" color="white" onClick={handleRegister}>
+        <Button mt={10} bg="#673ab7" _hover={{bg:"#673ab7"}} color="white" onClick={handleRegister}>
           Signup
         </Button>
         <Text mt={5}>OR</Text>
