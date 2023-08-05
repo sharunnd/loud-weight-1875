@@ -36,7 +36,6 @@ export const AdminDashboard = () => {
   }, [refresh]);
   const sold = AllPetsList.filter(el => el.status === "Sold");
   
- 
 
   return (
     <Box>

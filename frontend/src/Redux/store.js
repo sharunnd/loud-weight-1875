@@ -17,7 +17,7 @@ const rootReducer = combineReducers({
   adminPetsReducer,
   loginUserReducer,
   shelterReducer
-  adoptionPetsReducer,
+  // adoptionPetsReducer,
 
 });
 
