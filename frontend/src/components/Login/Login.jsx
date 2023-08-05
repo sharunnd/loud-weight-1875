@@ -39,7 +39,7 @@ export const Login = () => {
     };
     dispatch({ type: LOGIN_REQUEST });
     axios
-      .post(`https://real-pink-donkey-coat.cyclic.app/users/login`, loginData)
+      .post(`https://prickly-visor-ox.cyclic.app/users/login`, loginData)
       .then((res) => {
         dispatch({ type: LOGIN_SUCCESS, payload: res.data.role });
         toast({

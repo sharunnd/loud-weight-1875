@@ -51,7 +51,7 @@ export const AdminPetsCard = ({
 
   const dispatch = useDispatch();
   const handleEdit = () => {
-    axios.get(`https://real-pink-donkey-coat.cyclic.app/pets`).then((res)=>{
+    axios.get(`https://prickly-visor-ox.cyclic.app/pets`).then((res)=>{
       let item =  res.data.data.find(element => 
         element._id == _id
       )
@@ -94,7 +94,7 @@ export const AdminPetsCard = ({
       health: pethealth,
       status: petStatus,
     };
-    console.log("id",_id);
+    console.log("id",_id,petPrice);
     dispatch(updatePetDetails(_id, data));
 
     toast({

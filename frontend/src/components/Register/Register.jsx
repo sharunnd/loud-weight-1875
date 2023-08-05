@@ -35,7 +35,7 @@ export const Register = () => {
       name:`${fName+" "+LName}`
     }
     dispatch({type:REGISTER_REQUEST})
-    axios.post(`https://real-pink-donkey-coat.cyclic.app/users/register`,regData).then((res)=>{
+    axios.post(`https://prickly-visor-ox.cyclic.app/users/register`,regData).then((res)=>{
     dispatch({type:REGISTER_SUCCESS})
     toast({
       position: "top",
