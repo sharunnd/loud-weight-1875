@@ -14,7 +14,6 @@ export const getAllUsers=(dispatch)=>{
         dispatch({type:USERS_FAILURE})
     })
 }
-
 export const changeUserRole = (id,data)=>(dispatch)=>{
     dispatch({type:USERS_REQUEST})
     axios.patch(`https://petconnects-aml6.onrender.com/users/update/${id}`,data).then((res)=>{
