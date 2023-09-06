@@ -51,7 +51,7 @@ export const AdminPetsCard = ({
 
   const dispatch = useDispatch();
   const handleEdit = () => {
-    axios.get(`https://prickly-visor-ox.cyclic.app/pets`).then((res)=>{
+    axios.get(`https://petconnects-aml6.onrender.com/pets`).then((res)=>{
       let item =  res.data.data.find(element => 
         element._id == _id
       )

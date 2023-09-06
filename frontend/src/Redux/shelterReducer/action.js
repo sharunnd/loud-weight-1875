@@ -6,7 +6,7 @@ export const getShelterData = (params) => async (dispatch) => {
 
   dispatch({ type: GET_SHELTER_REQUEST })
       console.log(params,"im")
-  return axios.get(`https://prickly-visor-ox.cyclic.app/shelters/`,params)
+  return axios.get(`https://petconnects-aml6.onrender.com/shelters/`,params)
     .then((res) => {
       // console.log(res.data,"heloo")
       dispatch({ type: GET_SHELTER_SUCCESS, payload: res.data })

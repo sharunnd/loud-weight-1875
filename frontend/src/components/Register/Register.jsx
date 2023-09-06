@@ -17,7 +17,7 @@ import { AiOutlineFacebook } from "react-icons/ai";
 import { FcGoogle } from "react-icons/fc";
 import { useDispatch } from "react-redux";
 import { NavLink } from "react-router-dom";
-import { registerUser } from "../../Redux/registerReducer/action";
+// import { registerUser } from "../../Redux/registerReducer/action";
 import { REGISTER_FAILURE, REGISTER_REQUEST, REGISTER_SUCCESS } from "../../Redux/registerReducer/actionTypes";
 import axios from "axios";
 export const Register = () => {
@@ -35,7 +35,7 @@ export const Register = () => {
       name:`${fName+" "+LName}`
     }
     dispatch({type:REGISTER_REQUEST})
-    axios.post(`https://prickly-visor-ox.cyclic.app/users/register`,regData).then((res)=>{
+    axios.post(`https://petconnects-aml6.onrender.com/users/register`,regData).then((res)=>{
     dispatch({type:REGISTER_SUCCESS})
     toast({
       position: "top",

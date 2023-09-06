@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { GET_ADOPTION_DATA_FAILURE, GET_ADOPTION_DATA_REQUEST, GET_ADOPTION_DATA_SUCCESS,GET_DETAILS_DATA_SUCCESS } from "./actionType"
 
-const url="https://prickly-visor-ox.cyclic.app/"
+const url="https://petconnects-aml6.onrender.com/"
 export const getAdoptionData = (params) => async (dispatch) => {
     dispatch({ type: GET_ADOPTION_DATA_REQUEST })
     return await axios.get(`${url}/pets`,params)

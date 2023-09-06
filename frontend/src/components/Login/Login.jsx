@@ -17,9 +17,9 @@ import axios from "axios";
 import React, { useState } from "react";
 import { AiOutlineFacebook } from "react-icons/ai";
 import { FcGoogle } from "react-icons/fc";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { NavLink, useNavigate } from "react-router-dom";
-import { userDetails } from "../../Redux/loginReducer/action";
+// import { userDetails } from "../../Redux/loginReducer/action";
 import {
   LOGIN_FAILURE,
   LOGIN_REQUEST,
@@ -39,7 +39,7 @@ export const Login = () => {
     };
     dispatch({ type: LOGIN_REQUEST });
     axios
-      .post(`https://prickly-visor-ox.cyclic.app/users/login`, loginData)
+      .post(`https://petconnects-aml6.onrender.com/users/login`, loginData)
       .then((res) => {
         dispatch({ type: LOGIN_SUCCESS, payload: res.data.role });
         toast({
